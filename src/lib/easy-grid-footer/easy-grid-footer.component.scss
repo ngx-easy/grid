@@ -1,8 +1,8 @@
 @import '../styles';
 .ez-grid-footer {
   display: block;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 1px;
   width: 100%;
   background-color: $footer-background-color;
   color: $footer-color;

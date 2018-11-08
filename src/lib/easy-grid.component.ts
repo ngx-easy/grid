@@ -42,6 +42,8 @@ export class EasyGridComponent implements OnInit {
 
   ngOnInit() {
     this.gridService.data = this.gridService._data = this.data;
+    this.gridService.buffer = this.buffer ? this.buffer : 0;
+    this.gridService.debounceTime = this.debounceTime && !this.gridService.isMobile ? this.debounceTime : 0;
     this.gridService.rowHeight = this.rowHeight;
     this.gridService.headerHeight = this.headerHeight ? this.headerHeight : this.rowHeight;
     this.gridService.footerHeight = this.footerHeight ? this.footerHeight : this.rowHeight / 2;

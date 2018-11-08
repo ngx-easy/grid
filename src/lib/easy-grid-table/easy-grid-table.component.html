@@ -1,6 +1,6 @@
 <div class="ez-grid-table-container" [style.height]="'calc(100% - ' + ((gridService.headerHeight * (gridService.filterable ? 2 : 1)) + (gridService.footer ? gridService.footerHeight : 0)) + 'px)'">
   <ez-virtual-scroll #vs [size]="gridService.data.length" [rowHeight]="gridService.rowHeight" [buffer]="gridService.buffer"
-    [debounceTime]="gridService.debounceTime" (scroll)="onScroll($event)">
+    [debounceTime]="gridService.debounceTime" (scrollEvent)="onScroll($event)">
     <div class="loading">
       <div class="loading-icon"></div>
     </div>

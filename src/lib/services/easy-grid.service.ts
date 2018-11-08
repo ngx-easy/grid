@@ -8,8 +8,8 @@ export class EasyGridService {
   public _data: any[];
   public columns: Array<EasyGridColumn> = [];
   public rowHeight: number;
-  public buffer = 0;
-  public debounceTime = 0;
+  public buffer: number;
+  public debounceTime: number;
   public sortable: boolean;
   public filterable: boolean;
   public headerHeight: number;
