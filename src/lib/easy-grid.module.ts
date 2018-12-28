@@ -9,6 +9,7 @@ import { EasyGridColumnComponent } from './easy-grid-column/easy-grid-column.com
 import { EasyGridHeaderComponent } from './easy-grid-header/easy-grid-header.component';
 import { EasyGridTableComponent } from './easy-grid-table/easy-grid-table.component';
 import { EasyGridFooterComponent } from './easy-grid-footer/easy-grid-footer.component';
+import { EasyGridService } from './services/easy-grid.service';
 
 @NgModule({
     imports: [
@@ -24,10 +25,12 @@ import { EasyGridFooterComponent } from './easy-grid-footer/easy-grid-footer.com
         EasyGridTableComponent,
         EasyGridFooterComponent,
     ],
+    providers: [
+        EasyGridService,
+    ],
     exports: [
         EasyGridComponent,
         EasyGridColumnComponent,
-    ],
-    providers: [],
+    ]
 })
 export class EasyGridModule { }

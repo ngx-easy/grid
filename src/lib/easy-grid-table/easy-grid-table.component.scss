@@ -1,4 +1,9 @@
 @import '../styles';
+
+.cdk-virtual-scroll-viewport {
+  height: 100%;
+  width: 100%;
+}
 .ez-grid-table {
   color: $table-row-color;
   background-color: $table-row-background-color;
